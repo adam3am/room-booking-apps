@@ -392,9 +392,9 @@ exports.update = function (req, res) {
 * [Vuetify](https://vuetifyjs.com/en/)
 * [Express](https://expressjs.com)
 * [PostgreSQL](https://www.postgresql.org)
+* [Sequelize](https://sequelize.org)
 * [jsonwebtoken](https://jwt.io)
-* [bcryptjs](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [pg](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [bcryptjs](https://www.npmjs.com/package/bcryptjs)
 
 ## Authors
 

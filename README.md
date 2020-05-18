@@ -389,6 +389,7 @@ exports.update = function (req, res) {
 ## Built With
 
 * [Vue](https://vuejs.org)
+* [Vuetify](https://vuetifyjs.com/en/)
 * [Express](https://expressjs.com)
 * [PostgreSQL](https://www.postgresql.org)
 * [jsonwebtoken](https://jwt.io)

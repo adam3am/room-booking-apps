@@ -54,7 +54,7 @@
                       <v-text-field
                         v-model="editedItem.roles[0]"
                         label="Roles"
-												placeholder="Admin or User"
+												placeholder="admin or user"
                       ></v-text-field>
                     </v-flex>
                     <v-flex

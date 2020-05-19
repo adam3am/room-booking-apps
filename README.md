@@ -307,7 +307,7 @@ module.exports = {
 Untuk me-maintain project bisa di buka dengan VSCode. CSS dan assets terpisah di setiap Backend dan Frontend folder.
 
 ### Backend Express
-Buat database baru, Install NPM packages dan seed (users, rooms, bookings)
+Buat database baru, Install NPM packages dan seed db (users, rooms, bookings)
 ```sh
 createdb H8_Room_Booking
 ```
@@ -328,7 +328,7 @@ npm install
 npm run serve
 ```
 
-Search input (capacity, date time) dan update users (password, roles) belum berfungsi dengan baik. Silakan kasih masukan:
+Search (capacity, date time) dan update users (password, roles) belum berfungsi dengan baik. Silakan kasih masukan:
 
 ```html
 <v-layout>

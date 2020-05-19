@@ -306,7 +306,7 @@ module.exports = {
 
 Untuk me-maintain project bisa di buka dengan VSCode. CSS dan assets terpisah di setiap Backend dan Frontend folder.
 
-### Backend Express
+### Backend Node
 Buat database baru, Install NPM packages dan seed db (users, rooms, bookings)
 ```sh
 createdb H8_Room_Booking

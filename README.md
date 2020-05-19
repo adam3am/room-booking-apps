@@ -208,7 +208,7 @@ cd frontend
         </v-flex>
       </v-layout>
       <v-layout>
-        <v-text-field label="Capacity" placeholder="Input Capacity" type="number"></v-text-field>
+        <v-text-field label="Capacity" placeholder="Input Capacity" type="number" min="0"></v-text-field>
       </v-layout>
       <v-layout row wrap>
         <v-list-tile v-for="filter in possibleFilters" :key="filter">
@@ -306,7 +306,7 @@ module.exports = {
 
 Untuk me-maintain project bisa di buka dengan VSCode. CSS dan assets terpisah di setiap Backend dan Frontend folder.
 
-### Backend Node
+### Backend Express
 Buat database baru, Install NPM packages dan seed (users, rooms, bookings)
 ```sh
 createdb H8_Room_Booking
@@ -347,7 +347,7 @@ Search input (capacity, date time) dan update users (password, roles) belum berf
 	</v-flex>
 </v-layout>
 <v-layout>
-	<v-text-field label="Capacity" placeholder="Input Capacity" type="number"></v-text-field>
+	<v-text-field label="Capacity" placeholder="Input Capacity" type="number" min="0"></v-text-field>
 </v-layout>
 <v-layout row wrap>
 	<v-list-tile v-for="filter in possibleFilters" :key="filter">

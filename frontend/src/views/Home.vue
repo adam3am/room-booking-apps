@@ -61,6 +61,7 @@
           label="Capacity"
           placeholder="Input Capacity"
           type="number"
+					min="0"
         ></v-text-field>
       </v-layout>
       <v-layout

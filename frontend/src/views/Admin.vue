@@ -32,6 +32,7 @@
                       <v-text-field
                         v-model="editedItem.username"
                         label="Username"
+												placeholder="Nickname"
                       ></v-text-field>
                     </v-flex>
                     <v-flex
@@ -42,6 +43,7 @@
                       <v-text-field
                         v-model="editedItem.email"
                         label="Email"
+												placeholder="mail@gmail.com"
                       ></v-text-field>
                     </v-flex>
                     <v-flex
@@ -52,6 +54,7 @@
                       <v-text-field
                         v-model="editedItem.roles[0]"
                         label="Roles"
+												placeholder="Admin or User"
                       ></v-text-field>
                     </v-flex>
                     <v-flex
@@ -63,6 +66,7 @@
                         v-model="editedItem.password"
                         label="Password"
                         type="password"
+												placeholder="Password"
                       ></v-text-field>
                     </v-flex>
                   </v-layout>
@@ -155,6 +159,7 @@
                       <v-text-field
                         v-model="editedItemm.name"
                         label="Title"
+												placeholder="Name"
                       ></v-text-field>
                     </v-flex>
                     <v-flex
@@ -165,6 +170,7 @@
                       <v-text-field
                         v-model="editedItemm.description"
                         label="Description"
+												placeholder="Information"
                       ></v-text-field>
                     </v-flex>
                     <v-flex
@@ -175,6 +181,9 @@
                       <v-text-field
                         v-model="editedItemm.capacity"
                         label="Capacity"
+												placeholder="20"
+												type="number"
+												min="0"
                       ></v-text-field>
                     </v-flex>
                     <v-flex
@@ -185,6 +194,7 @@
                       <v-text-field
                         v-model="editedItemm.assets"
                         label="Assets"
+												placeholder="Water"
                       ></v-text-field>
                     </v-flex>
                     <v-flex
@@ -195,6 +205,7 @@
                       <v-text-field
                         v-model="editedItemm.pictures.url"
                         label="Pictures"
+												placeholder="https://"
                       ></v-text-field>
                     </v-flex>
                   </v-layout>

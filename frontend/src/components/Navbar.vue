@@ -88,7 +88,7 @@
           <v-avatar size="100">
             <img
               class="text-lg-center"
-              src="/avatar-1.png"
+              src="/avatar-1.jpeg"
             />
           </v-avatar>
         </v-flex>

@@ -328,7 +328,7 @@ npm install
 npm run serve
 ```
 
-Search (capacity, date time) dan update users (password, roles) belum berfungsi dengan baik. Silakan kasih masukan:
+Multi Search (capacity, date time) dan update users (password, roles) belum berfungsi dengan baik. Silakan kasih masukan:
 
 ```html
 <v-layout>

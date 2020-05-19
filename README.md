@@ -328,7 +328,7 @@ npm install
 npm run serve
 ```
 
-Search input (capacity, datetime) dan update users (password, roles) belum berfungsi dengan baik. Silakan kasih masukan:
+Search form (capacity, datetime) dan update users (password, roles) belum berfungsi dengan baik. Silakan kasih masukan:
 
 ```html
 <v-layout>
@@ -379,7 +379,7 @@ exports.update = function (req, res) {
           return res.status(201).send(user);
         })
         .catch(err => {
-          console.log('Error updating contact', JSON.stringify(err));
+          console.log('Error updating user', JSON.stringify(err));
           return res.status(400).send(err);
         });
     })

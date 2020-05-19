@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({
 // database
 const db = require("./app/models");
 
-// use after seed
+// after seed
 db.sequelize.sync();
 
 // simple route

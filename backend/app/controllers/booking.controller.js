@@ -40,7 +40,7 @@ exports.create = function (req, res) {
         return res
           .status(400)
           .send({
-            message: "Sudah Di-Book. Tanggal Dan Waktu Sama"
+            message: "Sudah Di-Book! Tanggal Dan Waktu Sama"
           });
       } else {
         return db.booking

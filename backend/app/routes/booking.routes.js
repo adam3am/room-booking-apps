@@ -1,5 +1,5 @@
 const {
-  authJwt
+  verifyJwt
 } = require("../middleware");
 const controller = require("../controllers/booking.controller");
 
@@ -14,13 +14,13 @@ module.exports = function (app) {
 
   app.post(
     "/api/booking",
-    [authJwt.verifyToken],
+    [verifyJwt.verifyToken],
     controller.create
   );
 
   app.get(
     "/api/booking/all",
-    [authJwt.verifyToken],
+    [verifyJwt.verifyToken],
     controller.list
   );
 };

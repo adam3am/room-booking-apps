@@ -44,8 +44,8 @@ isAdmin = (req, res, next) => {
   });
 };
 
-const authJwt = {
+const verifyJwt = {
   verifyToken,
   isAdmin
 };
-module.exports = authJwt;
+module.exports = verifyJwt;

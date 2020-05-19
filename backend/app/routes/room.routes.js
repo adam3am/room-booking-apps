@@ -1,5 +1,5 @@
 const {
-  authJwt
+  verifyJwt
 } = require("../middleware");
 const controller = require("../controllers/room.controller");
 
@@ -19,25 +19,25 @@ module.exports = function (app) {
 
   app.get(
     "/api/room/:id",
-    [authJwt.verifyToken],
+    [verifyJwt.verifyToken],
     controller.one
   );
 
   app.post(
     "/api/room",
-    [authJwt.verifyToken, authJwt.isAdmin],
+    [verifyJwt.verifyToken, verifyJwt.isAdmin],
     controller.create
   );
 
   app.put(
     "/api/room/:id",
-    [authJwt.verifyToken, authJwt.isAdmin],
+    [verifyJwt.verifyToken, verifyJwt.isAdmin],
     controller.update
   );
 
   app.delete(
     "/api/room/:id",
-    [authJwt.verifyToken, authJwt.isAdmin],
+    [verifyJwt.verifyToken, verifyJwt.isAdmin],
     controller.delete
   );
 };

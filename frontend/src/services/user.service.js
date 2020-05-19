@@ -1,7 +1,7 @@
 import axios from 'axios';
 import authHeader from './auth-header';
 
-const API_URL = 'http://localhost:3000/api/test/user/';
+const API_URL = 'http://localhost:3000/api/user/';
 
 class UserService {
   list() {

@@ -5,7 +5,7 @@ module.exports = (sequelize, Sequelize) => {
       validate: {
         len: {
           args: [3, 12],
-          msg: 'Minimal 3 to 12 characters.'
+          msg: 'Minimum 3 to 12 characters.'
         }
       }
     },

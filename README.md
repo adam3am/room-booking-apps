@@ -252,7 +252,7 @@ cd frontend
 ```sh
 cd backend
 ```
-2. File setting db dan token secret key berada di dalam folder config
+2. File config database dan token secret key berada di dalam folder app/config
 ```JS
 module.exports = {
   HOST: "localhost",
@@ -286,7 +286,7 @@ module.exports = {
 
 <tr><td>GET</td> <td>/api/room/all</td>  <td>Everyone can view all rooms</td></tr>
 
-<tr><td>GET</td> <td>/api/test/user/all</td>  <td>Admin can view all users with token</td></tr>
+<tr><td>GET</td> <td>/api/user/all</td>  <td>Admin can view all users with token</td></tr>
 
 <tr><td>GET</td> <td>/api/booking/all</td>  <td>Users can view all bookings with token</td></tr>
 
@@ -294,11 +294,11 @@ module.exports = {
 
 <tr><td>PUT</td> <td>/api/room/:id</td>  <td>Admin can update a room with token</td></tr>
 
-<tr><td>PUT</td> <td>/api/test/user/:id</td>  <td>Admin can update a user with token</td></tr>
+<tr><td>PUT</td> <td>/api/user/:id</td>  <td>Admin can update a user with token</td></tr>
 
 <tr><td>DELETE</td> <td>/api/room/:id</td>  <td>Admin can delete a room with token</td></tr>
 
-<tr><td>DELETE</td> <td>/api/test/user/:id</td>  <td>Admin can delete a user with token</td></tr>
+<tr><td>DELETE</td> <td>/api/user/:id</td>  <td>Admin can delete a user with token</td></tr>
 
 </table>
 
@@ -328,7 +328,7 @@ npm install
 npm run serve
 ```
 
-Multi Search (capacity, date time) dan update users (password, roles) belum berfungsi dengan baik. Silakan kasih masukan:
+Search input (capacity, datetime) dan update users (password, roles) belum berfungsi dengan baik. Silakan kasih masukan:
 
 ```html
 <v-layout>

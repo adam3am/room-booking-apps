@@ -137,7 +137,7 @@ exports.update = function (req, res) {
           return res.status(201).send(user);
         })
         .catch(err => {
-          console.log('Error updating contact', JSON.stringify(err));
+          console.log('Error updating room', JSON.stringify(err));
           return res.status(400).send(err);
         });
     })

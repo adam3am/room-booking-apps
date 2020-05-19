@@ -1,5 +1,5 @@
 const {
-  authJwt
+  verifyJwt
 } = require("../middleware");
 const controller = require("../controllers/user.controller");
 
@@ -13,20 +13,20 @@ module.exports = function (app) {
   });
 
   app.get(
-    "/api/test/user/all",
-    [authJwt.verifyToken, authJwt.isAdmin],
+    "/api/user/all",
+    [verifyJwt.verifyToken, verifyJwt.isAdmin],
     controller.list
   );
 
   app.put(
-    "/api/test/user/:id",
-    [authJwt.verifyToken, authJwt.isAdmin],
+    "/api/user/:id",
+    [verifyJwt.verifyToken, verifyJwt.isAdmin],
     controller.update
   );
 
   app.delete(
-    "/api/test/user/:id",
-    [authJwt.verifyToken, authJwt.isAdmin],
+    "/api/user/:id",
+    [verifyJwt.verifyToken, verifyJwt.isAdmin],
     controller.delete
   );
 };

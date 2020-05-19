@@ -5,7 +5,7 @@ const {
 } = db;
 const User = db.user;
 
-checkDuplicateUsernameOrEmail = (req, res, next) => {
+checkDuplicateUsers = (req, res, next) => {
   // Username
   User.findOne({
     where: {
@@ -29,7 +29,7 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
 
       if (userr) {
         res.status(400).send({
-          message: "Failed! Email is already in use!"
+          message: "Failed! Email is already exists!"
         });
         return;
       }
@@ -39,7 +39,7 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
   });
 };
 
-checkRolesExisted = (req, res, next) => {
+checkRoles = (req, res, next) => {
 
   if (req.body.roles) {
     for (let i = 0; i < req.body.roles.length; i++) {
@@ -56,9 +56,9 @@ checkRolesExisted = (req, res, next) => {
   next();
 };
 
-const verifySignUp = {
-  checkDuplicateUsernameOrEmail,
-  checkRolesExisted
+const checkSignUp = {
+  checkDuplicateUsers,
+  checkRoles
 };
 
-module.exports = verifySignUp;
+module.exports = checkSignUp;

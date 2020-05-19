@@ -186,7 +186,7 @@ cd frontend
 </template>
 ```
 
-4. Komponen Home.vue Menampilkan Daftar Room dan Search form yang berisikan: Date Time, Kapasitas dan Aset
+4. Komponen Home.vue Menampilkan Semua Room dan Search form yang berisikan: Date Time, Kapasitas dan daftar Aset
 ```html
 <template>
   <div>

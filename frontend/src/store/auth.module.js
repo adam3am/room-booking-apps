@@ -70,24 +70,6 @@ export const auth = {
     },
     registerFailure(state) {
       state.status.loggedIn = false;
-    },
-    updateSuccess(state) {
-      state.status.loggedIn = false;
-    },
-    updateFailure(state) {
-      state.status.loggedIn = false;
-    },
-    deleteSuccess(state) {
-      state.status.loggedIn = false;
-    },
-    deleteFailure(state) {
-      state.status.loggedIn = false;
-    },
-    singleSuccess(state) {
-      state.status.loggedIn = false;
-    },
-    singleFailure(state) {
-      state.status.loggedIn = false;
-    },
+    }
   }
 };
